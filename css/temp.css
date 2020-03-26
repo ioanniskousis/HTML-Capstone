@@ -1,0 +1,42 @@
+
+
+.fnt-sm {
+  font-size: 14px;
+}
+
+.fntOpenSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.green {
+  color: #22AA22;
+}
+
+
+.page-header-left {
+  flex: 1;
+  /* float: left; */
+  /* width: 60%; */
+  height: 100%;
+  display: flex;
+  align-content: center;
+  background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-bottom {
+  /* display: none; */
+  /* margin: 5px auto; */
+  /* background-color: orange; */
+  text-align: center;
+}
+
