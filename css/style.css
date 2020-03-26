@@ -1,0 +1,33 @@
+body {
+  background: rgba(76, 128, 255, 0.9) url("../images/Thumb.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition-property: background-size, background-position;
+  transition: ease;
+  transition-duration: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header-container {
+  position: relative;
+  /* background-color: orange; */
+  padding: 0 30px;
+}
+
+.page-header {
+  border-radius: 10px;
+  margin: 30px auto;
+  height: 60px;
+  max-width: 900px;
+  background: linear-gradient(transparent, white);
+
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-position: 0 0;
+    background-size: 100% auto;
+  }
+
+}
