@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/png" href="images/home-favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Results - Rent A Home</title>
+  <title>Rent A Home</title>
   <link rel="stylesheet" href="css/results.css">
 </head>
 <body>
@@ -16,88 +16,257 @@
           <div class="fnt_lg header-text">Home for your beloveds</div>
         </div>
         <div class="page-header-right">
-          <a href="index.html" class="menu-button">
-            <img src="images/search-13-16.png" alt="menu">
+          <a href="index.html" class="menu-button cflex">
+            <img src="images/search-13-16.png" alt="image">
             <span class="">Search</span>
           </a>
-          <a href="#" class="menu-button">
-            <img src="images/checked-user-16.png" alt="menu">
+          <a href="#" class="menu-button cflex">
+            <img src="images/checked-user-16.png" alt="image">
             <span class="">Account</span>
           </a>
-          <a href="#" class="menu-button">
-            <img src="images/google-blog-search-16.png" alt="menu">
+          <a href="#" class="menu-button cflex">
+            <img src="images/google-blog-search-16.png" alt="image">
             <span class="">Contact</span>
           </a>
-          <a href="#" class="menu-button">
-            <img src="images/menu-4-16.png" alt="menu">
+          <a href="#" class="menu-button cflex">
+            <img src="images/menu-4-16.png" alt="image">
             <span class="">More</span>
           </a>      
         </div>
       </nav>
     </div>
-    <div class="header-filters">
-      <div class="filters-container">
-        <form class="form-flex" action="#" method="GET">
-          <select name="" id="" class="flex12 responding">
-            <option value="0" selected="selected">select country</option>
-            <option value="1">Country 01</option>
-            <option value="2">Country 02</option>
-            <option value="3">Country 03</option>
-            <option value="4">Country 04</option>
-            <option value="5">Country 05</option>
-          </select>
-          <select name="" id="" class="flex12 responding">
-            <option value="0" selected="selected">select region</option>
-            <option value="1">Region 01</option>
-            <option value="2">Region 02</option>
-            <option value="3">Region 03</option>
-            <option value="4">Region 04</option>
-            <option value="5">Region 05</option>
-          </select>
-          <select name="" id="" class="flex12 responding">
-            <option value="0" selected="selected">select city</option>
-            <option value="1">City 01</option>
-            <option value="2">City 02</option>
-            <option value="3">City 03</option>
-            <option value="4">City 04</option>
-            <option value="5">City 05</option>
-          </select>
-          <select name="" id="" class="flex10 responding">
-            <option value="0" selected="selected">select type</option>
-            <option value="1">Type 01</option>
-            <option value="2">Type 02</option>
-            <option value="3">Type 03</option>
-            <option value="4">Type 04</option>
-            <option value="5">Type 05</option>
-          </select>
-          <!-- &#x33a1 -->
-          <select name="" id="" class="flex10 responding">
-            <option value="0" selected="selected">select &#x33a1;</option>
-            <option value="1">Sq Meters 01</option>
-            <option value="2">Sq Meters 02</option>
-            <option value="3">Sq Meters 03</option>
-            <option value="4">Sq Meters 04</option>
-            <option value="5">Sq Meters 05</option>
-          </select>
-          <select name="" id="" class="flex10 responding">
-            <option value="0" selected="selected ">select price</option>
-            <option value="1">Price 01</option>
-            <option value="2">Price 02</option>
-            <option value="3">Price 03</option>
-            <option value="4">Price 04</option>
-            <option value="5">Price 05</option>
-          </select>
-          <div class="form-buttons flex12">
-            <button class="search-button responding" type="submit">Search</button>
-            <button class="clear-button responding" type="submit">clear filters</button>
+  </header>
+  <div class="header-filters">
+    <div class="filters-container">
+      <form class="form-flex cflex" action="#" method="GET">
+        <label for="country">COUNTRY</label>
+        <select name="country" id="country" class="flex12 responding">
+          <option value="0" selected="selected">select country</option>
+          <option value="1">Country 01</option>
+          <option value="2">Country 02</option>
+          <option value="3">Country 03</option>
+          <option value="4">Country 04</option>
+          <option value="5">Country 05</option>
+        </select>
+        <label for="region">REGION</label>
+        <select name="region" id="region" class="flex12 responding">
+          <option value="0" selected="selected">select region</option>
+          <option value="1">Region 01</option>
+          <option value="2">Region 02</option>
+          <option value="3">Region 03</option>
+          <option value="4">Region 04</option>
+          <option value="5">Region 05</option>
+        </select>
+        <label for="city">CITY</label>
+        <select name="city" id="city" class="flex12 responding">
+          <option value="0" selected="selected">select city</option>
+          <option value="1">City 01</option>
+          <option value="2">City 02</option>
+          <option value="3">City 03</option>
+          <option value="4">City 04</option>
+          <option value="5">City 05</option>
+        </select>
+        <label for="type">TYPE</label>
+        <select name="type" id="type" class="flex10 responding">
+          <option value="0" selected="selected">select type</option>
+          <option value="1">Type 01</option>
+          <option value="2">Type 02</option>
+          <option value="3">Type 03</option>
+          <option value="4">Type 04</option>
+          <option value="5">Type 05</option>
+        </select>
+        <label for="area">AREA in Square Meters</label>
+        <select name="area" id="area" class="flex10 responding">
+          <option value="0" selected="selected">select &#x33a1;</option>
+          <option value="1">Sq Meters 01</option>
+          <option value="2">Sq Meters 02</option>
+          <option value="3">Sq Meters 03</option>
+          <option value="4">Sq Meters 04</option>
+          <option value="5">Sq Meters 05</option>
+        </select>
+        <label for="price">PRICE RANGE / MONTH</label>
+        <select name="price" id="price" class="flex10 responding">
+          <option value="0" selected="selected">select price</option>
+          <option value="1">Price 01</option>
+          <option value="2">Price 02</option>
+          <option value="3">Price 03</option>
+          <option value="4">Price 04</option>
+          <option value="5">Price 05</option>
+        </select>
+        <div class="form-buttons flex12">
+          <button class="search-button responding" type="submit">Search</button>
+          <button class="clear-button responding" type="submit">clear filters</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-grid">
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 01</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">750 &euro; / month</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-yes"></div>
+                <div class="info-facility tv-yes"></div>
+                <div class="info-facility wifi-yes"></div>
+              </div>
+            </div>
           </div>
-        </form>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 02</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">1900 &euro; / month</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-no"></div>
+                <div class="info-facility tv-yes"></div>
+                <div class="info-facility wifi-no"></div>
+              </div>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 03</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">3750 &euro; / year</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-no"></div>
+                <div class="info-facility tv-yes"></div>
+                <div class="info-facility wifi-no"></div>
+              </div>
+            </div>
+
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 04</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">4000 &euro; / month</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-yes"></div>
+                <div class="info-facility tv-yes"></div>
+                <div class="info-facility wifi-yes"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 03</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">750 &euro; / month</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-yes"></div>
+                <div class="info-facility tv-yes"></div>
+                <div class="info-facility wifi-yes"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="detail.html" class="">
+          <div class="home-grid">
+            <div class="top-picture">
+              <img src="images/content/image-top-3.png" alt="image">
+            </div>
+            <div class="bottom-left-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-center-picture">
+              <img src="images/content/image-center-3.png" alt="image">
+            </div>
+            <div class="bottom-right-info">
+              <div class="bottom-right-info-location cflex">Region 04</div>
+              <div class="bottom-right-info-description cflex">2nd floor - 2br - st</div>
+              <div class="bottom-right-info-price cflex">2750 &euro; / month</div>
+              <div class="bottom-right-info-facilities">
+                <div class="info-facility park-no"></div>
+                <div class="info-facility tv-no"></div>
+                <div class="info-facility wifi-yes"></div>
+              </div>
+            </div>
+
+          </div>
+        </a>
       </div>
     </div>
+  </main>
 
-  </header>
-  <div class="" style="height: 1000px; background-color:rgba(255, 255, 255, 0.9); margin: 0px 20px 20px 20px; border-radius: 10px;">
-<!-- a -->
-  </div>
+  <footer class="cflex">
+    <div>&hearts; &copy; &hearts;</div>
+    <hr>
+    <div>--- Ioannis Kousis ---</div>
+    
+
+    
+  </footer>
 </body>
 </html>
