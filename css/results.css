@@ -21,13 +21,14 @@ div {
 
 header {
   position: sticky;
-  top: 30px;
+  top: 0;
   z-index: 10;
 }
 
 .page-header-container {
-  padding: 0 20px;
-  height: 60px;
+  background-color: rgb(10, 161, 50);
+  padding: 5px 20px;
+  height: 70px;
 }
 
 .page-header {
@@ -38,8 +39,9 @@ header {
   border-radius: 10px;
   margin: auto;
   height: 100%;
-  max-width: 900px;
-  background: linear-gradient(transparent, white);
+  /* max-width: 900px; */
+  /* background-color: #555; */
+  background: linear-gradient(rgb(10, 161, 50), white);
 }
 
 .page-header-left {
@@ -54,11 +56,11 @@ header {
   justify-content: space-around;
 }
 
-
+/* url("../images/search-13-16.png") */
 .header-home-img {
   display: inline-block;
-  background: url(../images/home-5-48.png) no-repeat center center;
-  background-size: 60% 60%;
+  background: url("../images/search-13-16.png") no-repeat 95% 2% / 16px, url(../images/home-5-48.png) no-repeat center center / 60% 60%;
+  /* background-size: 60% 60%; */
   border-radius: 10px;
   width: 60px;
   height: 60px;
@@ -118,174 +120,6 @@ header {
   margin-left: 8px;
 }
 
-.header-bottom {
-  margin: 15px auto;
-  text-align: center;
-}
-
-.header-bottom-img {
-  display: block !important;
-  margin: auto;
-  text-align: center;
-}
-
-.search-outer {
-  position: relative;
-  margin-top: 300px;
-  padding: 0 20px;
-}
-
-.search-container {
-  box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
-  background-color: rgba(151, 165, 167, 0.9);
-  max-width: 900px;
-  margin: auto;
-  height: 100%;
-  border-radius: 10px;
-  padding: 30px 30px;
-}
-
-.search-container p {
-  margin: 6px 4px;
-}
-
-.form-sm {
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.form-sm input[type="text"] {
-  box-sizing: border-box;
-  display: inline-block;
-  border-radius: 4px;
-  border: none;
-  height: 40px;
-  width: calc(100% - 130px);
-  margin: 0;
-  padding: 0 20px;
-  font-size: 16px;
-  outline: none;
-}
-
-.form-sm button {
-  margin: 0;
-  display: inline-block;
-  border-radius: 4px;
-  border: none;
-  height: 40px;
-  width: 120px;
-  font-size: 16px;
-  background-color: rgb(227, 73, 58);
-  color: white;
-  cursor: pointer;
-}
-
-.form-sm button:hover {
-  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.5);
-}
-
-.form-sm button:active {
-  box-shadow: 0 0 4px 3px rgba(30, 30, 30, 0.5);
-}
-
-.details-container {
-  margin: 10px 0;
-}
-
-details {
-  max-width: 900px;
-  margin: auto;
-}
-
-.how-works {
-  font-size: 16px;
-  width: 180px;
-  height: 40px;
-  background-color: lightgray;
-  box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
-  border-radius: 4px;
-  margin-left: 30px;
-}
-
-.how-works:hover {
-  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.5);
-}
-
-.how-works:active {
-  box-shadow: 0 0 4px 3px rgba(30, 30, 30, 0.5);
-}
-
-details summary {
-  position: relative;
-  cursor: pointer;
-  outline: none;
-}
-
-details summary span {
-  position: absolute;
-  margin-top: 12px;
-  margin-left: 30px;
-  display: block;
-  line-height: 100%;
-}
-
-details summary span i {
-  margin-left: 10px;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.how-works-details {
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 900px;
-  margin: auto;
-  margin-top: 10px;
-  padding: 20px 30px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.how-works-details p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: rgb(227, 73, 58);
-}
-
-.how-works-steps {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  overflow: hidden;
-}
-
-.how-works-step {
-  cursor: pointer;
-  text-align: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.5);
-  min-width: 150px;
-}
-
-.how-works-step:hover {
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.how-works-step img {
-  width: 20px;
-  height: 20px;
-}
-.how-works-step p {
-  color: #333;
-}
-
-/* media queries*/
 
 @media only screen and (max-width: 768px) {
   body {
