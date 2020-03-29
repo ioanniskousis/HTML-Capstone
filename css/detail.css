@@ -73,8 +73,8 @@ div {
   border-radius: 4px;
   position: absolute;
   z-index: 2;
-  top: -40px;
-  left: -70px;
+  top: -50px;
+  left: -130px;
   width: 120px;
   height: 40px;
   padding: 0 20px 0 20px;
@@ -92,8 +92,8 @@ div {
   content: "";
   position: absolute;
   bottom: -10px;
-  right: 50%;
-  margin-left: 90px;
+  right: 20px;
+  margin-left: 100px;
   margin-top: -10px;
   border-width: 10px;
   border-style: solid;
@@ -209,21 +209,21 @@ header {
 
 main {
   position: relative;
-  padding: 0 20px;
+  height: 100%;
+  padding: 10px 20px;
   margin-bottom: 100px;
 }
 
 .main-flex {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .details-list {
   flex: 1;
   width: 500px;
-  min-width: 400px;
-  padding: 0 20px 20px 20px;
+  min-width: 380px;
+  padding: 0 10px 20px 0;
 }
 
 .real-estate {
@@ -233,7 +233,7 @@ main {
   align-items: center;
   padding: 6px 15px;
   border-bottom: 4px solid #00AEDF;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .real-estate img {
@@ -268,7 +268,7 @@ main {
   background-color: #00AEDF;
 }
 
-.details-item_tag {
+.details-item-tag {
   position: absolute;
   top: 8px;
   right: 10px;
@@ -302,7 +302,7 @@ main {
   min-width: 500px;
   height: 652px;
   overflow: scroll;
-  padding: 0 20px 20px 20px;
+  padding: 0 0 20px 10px;
 }
 
 .fotos-gallery::-webkit-scrollbar {
@@ -312,28 +312,37 @@ main {
 .gallery-item {
   background-color: rgba(255, 255, 255, 0.99);
   margin-bottom: 10px;
-  height: 360px;
   display: flex;
-  align-items: stretch;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .gallery-item-description {
   flex: 1;
   padding: 20px;
+  min-width: 300px;
+}
+
+.gallery-item-description p {
+  margin: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 174, 223, 0.3);;
 }
 
 .gallery-item-description p:nth-child(1)::first-letter {
   font-size: larger;
   color: red;
 }
+
 .gallery-item-image {
   flex: 2;
+  display: flex;
+  align-items: center;
+  min-width: 400px;
 }
 
 .gallery-item-image img {
   width: 100%;
-  height: 100%;
 }
 
 footer {
@@ -347,6 +356,10 @@ footer {
   flex-direction: column;
 }
 
+.heart {
+  margin: 0 6px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     background-position: 0 0;
@@ -356,11 +369,6 @@ footer {
   .vis-lg {
     display: none;
     visibility: hidden;
-  }
-
-  .vis-sm {
-    display: inline-block;
-    visibility: visible;
   }
 
   .page-header-container {
@@ -391,17 +399,13 @@ footer {
     display: none;
   }
 
-  .header-home-img:active {
-    box-shadow: 0 1px 6px white inset;
-  }
-  
   .menu-button img {
     width: 24px;
     height: 24px;
   }
 
   main {
-    padding: 0 10px;
+    padding: 10px;
   }
   
   .main-flex {
@@ -410,11 +414,14 @@ footer {
 
   .details-list {
     width: 100%;
+    max-width: 100%;
     min-width: unset;
+    padding-right: 0;
+    margin: 0;
   }
 
   .fotos-gallery {
-    height: auto;
+    height: unset;
     overflow: initial;
     padding: 0;
     width: 100%;
@@ -423,12 +430,19 @@ footer {
   }
 
   .gallery-item {
-    height: auto;
     margin-bottom: 10px;
-    flex-direction: column;
-    align-items: unset;
+  }
+  
+  .gallery-item-image {
+    flex: 1;
+    text-align: center;
   }
 
+  .gallery-item-image img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -437,14 +451,6 @@ footer {
     visibility: visible;
   }
 }
-
-/* 
-@media only screen and (max-width: 1025px) {
-  .fotos-gallery {
-    height: auto;
-    overflow: initial;
-  }
-} */
 
 @media only screen and (min-width: 1025px) {
   .fnt_lg {

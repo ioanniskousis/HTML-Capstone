@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body::-mo {
+  display: none;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -134,7 +138,6 @@ header {
 
 .header-filters {
   background-color: rgb(10, 161, 50);
-  /* background: rgb(10, 161, 50) url("../images/Thumb.jpg") no-repeat -65px -74px; */
   background-size: cover;
   padding: 5px 20px;
   position: sticky;
@@ -249,7 +252,7 @@ main {
   padding-bottom: 30px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr));
 }
 
@@ -272,32 +275,42 @@ main {
 .top-picture {
   grid-area: top;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.top-picture img {
+  width: 100%;
 }
 
 .bottom-left-picture {
   grid-area: bottom-left;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-center-picture {
   grid-area: bottom-center;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.top-picture img,
+.top-picture img {
+  width: 100%;
+}
+
 .bottom-left-picture img,
 .bottom-center-picture img {
-  width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .bottom-right-info {
   height: 100%;
   grid-area: bottom-right;
-  background-color: red;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas: 'location' 'location' 'description' 'description' 'price' 'price' 'facilities';
 }
 
@@ -379,22 +392,6 @@ footer {
 
 .heart {
   margin: 0 6px;
-  font-size: 16px;
-  color: white;
-  /* -webkit-animation: heart-animation 0.5 infinite; */
-  /* -moz-animation: heart-animation 0.5 infinite; */
-  animation: heart-animation 0.5s 0.5 infinite;
-
-  /* animation-duration: 0.5;
-  animation-iteration-count: infinite; */
-  /* animation-direction: alternate-reverse; */
-}
-
-@keyframes heart-animation {
-  /* from {font-size: 16px;} */
-  to {font-size: 40px;}
-  /* from {color: white;} */
-  /* to { color: red;} */
 }
 
 @media only screen and (max-width: 768px) {
@@ -482,6 +479,64 @@ footer {
   .clear-button {
     flex: 1;
   }
+
+  main {
+    margin: 8px 10px 20px 10px;
+    padding: 0;
+  }
+
+  .home-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'top top' 'top top' 'top top' 'top top' 'mid-left mid-right'  'mid-left mid-right' 'bottom bottom' 'bottom bottom';
+    border-bottom: 2px solid rgb(0, 174, 223);
+    margin-bottom: 20px;
+  }
+
+  .top-picture {
+    grid-area: top;
+  }
+
+  .bottom-left-picture {
+    grid-area: mid-left;
+  }
+
+  .bottom-center-picture {
+    grid-area: mid-right;
+  }
+
+  .top-picture img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bottom-left-picture img,
+  .bottom-center-picture img {
+    height: 100%;
+  }
+  
+  .bottom-right-info {
+    height: 100%;
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'location description' 'price facilities';
+  }
+  
+  .bottom-right-info-location {
+    padding: 8px 4px;
+  }
+  
+  .bottom-right-info-description {
+    padding: 8px;
+  }
+  
+  .bottom-right-info-price {
+    padding: 8px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -489,6 +544,17 @@ footer {
     display: flex;
     visibility: visible;
   }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    padding: 10px;
+  }
+
+  .main-grid {
+    grid-gap: 10px;
+  }  
 }
 
 @media only screen and (min-width: 1025px) {

@@ -144,6 +144,8 @@ header {
   position: relative;
   margin-top: 300px;
   padding: 0 20px;
+  -webkit-animation: search-animation 2s ease-out;
+  -moz-animation: search-animation 2s ease-out;
   animation: search-animation 2s ease-out;
 }
 
@@ -225,10 +227,17 @@ details {
   box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
   border-radius: 4px;
   margin-left: 30px;
-  /* animation: how-works-animation 2s ease-in-out;
-  animation-iteration-count: 3;
-  animation-fill-mode: alternate-reverse;
-  animation-delay: 2s; */
+
+  -webkit-animation: how-works-animation 1s ease-in-out;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-direction: alternate-reverse;
+  
+  -moz-animation: how-works-animation 1s ease-in-out;
+  -moz-animation-iteration-count: 4;
+  -moz-animation-delay: 3s;
+  -moz-animation-direction: alternate-reverse;
+
   animation: how-works-animation 1s ease-in-out;
   animation-iteration-count: 4;
   animation-delay: 3s;
@@ -262,9 +271,9 @@ details summary {
 
 details summary span {
   position: absolute;
+  -moz-margin-top: 12px;
   margin-top: 12px;
   margin-left: 30px;
-  display: block;
   line-height: 100%;
 }
 
@@ -275,6 +284,19 @@ details summary span i {
 details summary::-webkit-details-marker {
   display: none;
 }
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::-moz-list-bullet {
+  list-style-type: none;
+  display: none;
+}
+/* 
+details summary::details-marker {
+  display: none;
+} */
 
 .how-works-details {
   background-color: rgba(255, 255, 255, 0.8);
