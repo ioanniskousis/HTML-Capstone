@@ -26,15 +26,15 @@ All pages are designed so they respond to three screen sizes 768 1024 and >1024 
 
 ## Screen Shots
 
-![screenshot](images/screen-shots/index lg.png)
-![screenshot](images/screen-shots/index sm1.png) 
-![screenshot](images/screen-shots/index sm2.png)
-![screenshot](images/screen-shots/results lg.png)
-![screenshot](images/screen-shots/results sm1.png) 
-![screenshot](images/screen-shots/results sm2.png)
-![screenshot](images/screen-shots/detail lg.png)
-![screenshot](images/screen-shots/detail sm1.png) 
-![screenshot](images/screen-shots/detail sm2.png)
+![screenshot]("images/screen-shots/index lg.png")
+![screenshot]("images/screen-shots/index sm1.png") 
+![screenshot]("images/screen-shots/index sm2.png")
+![screenshot]("images/screen-shots/results lg.png")
+![screenshot]("images/screen-shots/results sm1.png") 
+![screenshot]("images/screen-shots/results sm2.png")
+![screenshot]("images/screen-shots/detail lg.png")
+![screenshot]("images/screen-shots/detail sm1.png") 
+![screenshot]("images/screen-shots/detail sm2.png")
 
 ## To build the project I have used pure HTML and CSS
 ## Environment images are downloaded from White Icons database and 4 sample pictures of a real-estate agency page
