@@ -1,109 +1,5 @@
-body {
-  background: rgb(10, 161, 50) url("../images/Thumb.jpg") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-}
-
-* {
-  font-family: inherit;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-div {
-  box-sizing: border-box;
-}
-
-.cflex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fnt_lg {
-  font-size: 22px;
-}
-
-.fnt_md {
-  font-size: 18px;
-}
-
-.a-flat {
-  color: inherit;
-  text-decoration: none;
-}
-
-.orange {
-  color: orange;
-}
-
-.dodgerblue {
-  color: #00AEDF;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.fooHeading {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  padding: 0;
-  margin: 0;
-}
-
-.tooltip {
-  position: relative;
-  overflow: visible;
-}
-
-.tooltiptext {
-  visibility: hidden;
-  background-color: #333;
-  color: whitesmoke;
-  text-align: left;
-  border-radius: 4px;
-  position: absolute;
-  z-index: 2;
-  top: -50px;
-  left: -130px;
-  width: 120px;
-  height: 40px;
-  padding: 0 20px 0 20px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: 20px;
-  margin-left: 100px;
-  margin-top: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent #333 transparent transparent;
-}
-
 header {
-  position: sticky;
-  top: 0px;
-  z-index: 10;
+  top: 0;
 }
 
 .page-header-container {
@@ -114,98 +10,8 @@ header {
 }
 
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0;
-  border-radius: 10px;
-  margin: auto;
-  height: 100%;
-  background: linear-gradient(transparent, white);
+  max-width: 100%;
 }
-
-.page-header-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.page-header-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.header-home-img {
-  display: inline-block;
-  background: url(../images/home-5-48.png) no-repeat center center / 60% 60%;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  box-shadow: 0 -1px 6px white;
-}
-
-.header-home-img a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.header-home-img:active {
-  box-shadow: 0 1px 6px white inset;
-}
-
-.header-text {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  text-shadow: 0 0 6px black;
-  color: white;
-}
-
-.menu-button {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 0 0.5vw;
-  text-align: center;
-  margin: 0 0.4vw;
-  height: 80%;
-  border-radius: 10px 10px 0 0 ;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-.menu-button:hover {
-  box-shadow: 0 -4px 6px white;
-}
-
-.menu-button:active {
-  box-shadow: 0 4px 6px white inset;
-}
-
-.menu-button img {
-  flex: 1;
-  width: 20px;
-  height: 20px;
-}
-
-.menu-button span {
-  flex: 2;
-  margin-left: 8px;
-}
-
-.header-bottom {
-  margin: 15px auto;
-  text-align: center;
-}
-
-.header-bottom-img {
-  display: block !important;
-  margin: auto;
-  text-align: center;
-}
-
 
 main {
   position: relative;
@@ -234,6 +40,9 @@ main {
   padding: 6px 15px;
   border-bottom: 4px solid #00AEDF;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .real-estate img {
@@ -248,6 +57,9 @@ main {
   color: orange;
   text-shadow: 0 0 2px black;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .details-item {
@@ -266,6 +78,13 @@ main {
   color: white;
   width: 120px;
   background-color: #00AEDF;
+  flex-shrink: 0;
+}
+
+.details-item-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .details-item-tag {
@@ -345,63 +164,10 @@ main {
   width: 100%;
 }
 
-footer {
-  background-color: rgb(57, 123, 185);
-  height: 100px;
-  text-align: center;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.heart {
-  margin: 0 6px;
-}
-
 @media only screen and (max-width: 768px) {
-  body {
-    background-position: 0 0;
-    background-size: 100% auto;
-  }
-
-  .vis-lg {
-    display: none;
-    visibility: hidden;
-  }
-
   .page-header-container {
     padding: 4px 20px 5px 20px;
     height: 70px;
-  }
-  
-  .page-header {
-    background-color: rgba(15, 141, 15, 0.95);
-    border-radius: 6px;
-  }
-
-  .header-home-img {
-    background-color: rgba(80, 150, 80, 0.5);
-  }
-
-  .page-header-right {
-    flex: 1;
-    justify-content: center;
-  }
-
-  .menu-button {
-    padding: 0 6vw;
-    margin: 0 1vw;
-  }
-
-  .menu-button span {
-    display: none;
-  }
-
-  .menu-button img {
-    width: 24px;
-    height: 24px;
   }
 
   main {
@@ -426,44 +192,22 @@ footer {
     padding: 0;
     width: 100%;
     flex: 1;
-    min-width: unset;
+    min-width: 300px;
   }
 
   .gallery-item {
     margin-bottom: 10px;
+    min-width: 280px;
   }
   
   .gallery-item-image {
     flex: 1;
     text-align: center;
+    min-width: 300px;
   }
 
   .gallery-item-image img {
     margin: auto;
     width: 100%;
-    height: 100%;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .vis-lg {
-    display: flex;
-    visibility: visible;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .fnt_lg {
-    font-size: 26px;
-  }
-
-  .vis-lg {
-    display: flex;
-    visibility: visible;
-  }
-
-  .vis-sm {
-    display: none;
-    visibility: hidden;
   }
 }
