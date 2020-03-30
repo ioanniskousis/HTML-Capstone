@@ -36,8 +36,8 @@ All pages are designed so they respond to three screen sizes 768 1024 and >1024 
 ![screenshot](images/screen-shots/detail_sm1.png) 
 ![screenshot](images/screen-shots/detail_sm2.png)
 
-## To build the project I have used pure HTML and CSS
-## Environment images are downloaded from White Icons database and 4 sample pictures of a real-estate agency page
+### To build the project I have used pure HTML and CSS
+### Environment images are downloaded from White Icons database and 4 sample pictures of a real-estate agency page
 ## Built With :
 
 - HTML,
