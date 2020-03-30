@@ -2,19 +2,19 @@
 HTML & CSS capstone project is based on an online Directory of Schools, but the specifications suggests to personalize the content and choose between a variety of content types, one of which was “house rental” and this is my choice.
 Therefor, I developed this project that demonstrate the management of content of a real-estate agency database using three pages. 
 
-1. The main page which represents a search mechanism that links to the 2nd page showing the results of the search.
+- 1. The main page which represents a search mechanism that links to the 2nd page showing the results of the search.
 The page appears showing some animations. One prompts the user to learn about the use of the application.
 The navigation menu stands on the top of the screen with buttons that respond on the mouse hover and click.
 The search button links to the results page assuming that the user has typed some keywords in the input box.
 The results page can be accessed from the menu button labeled Homes as well - the first of the right-side buttons of the navigator.
 
-2. The results pages shows links in a grid layout. Three pictures and a panel with critical information represent a link to a house laid out in a smaller grid form. The user accesses the details page by clicking anywhere in each item. The navigator menu contains a Home button on the left side of the navigator and a Search button to move back to the search page. The page provides a number of filters to help the users applying detailed search.
+- 2. The results pages shows links in a grid layout. Three pictures and a panel with critical information represent a link to a house laid out in a smaller grid form. The user accesses the details page by clicking anywhere in each item. The navigator menu contains a Home button on the left side of the navigator and a Search button to move back to the search page. The page provides a number of filters to help the users applying detailed search.
 
-3. The details page shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
+- 3. The details page shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
 On the right side stands a scrolling list of pictures with description in a few paragraphs.
 The results page can be accessed by the first of the four right-side buttons on the navigator
 
-4. Additionally I included an Under-Construction page that appears when one of the inactive menu buttons is clicked 
+- 4. Additionally I included an Under-Construction page that appears when one of the inactive menu buttons is clicked 
 
 The environment	is based on a selection of colours of light green and light blue variations since they are more appropriate for a house rental page, according to the point of view of colours’ psychology and how they affect users. Due to this I provide this link to a relevant article. 
 https://www.google.com/amp/s/www.intechnic.com/blog/color-psychology-101-how-color-affects-perception-of-your-website/%3fhs_amp=true 
@@ -22,7 +22,7 @@ https://www.google.com/amp/s/www.intechnic.com/blog/color-psychology-101-how-col
 All pages are designed so they respond to three screen sizes 768 1024 and >1024 by using media queries 
 
 ## Video Presentation
-[Video](https://www.loom.com/share/309a36da0e5341b4a36173f574e9084b)
+[Video](https://www.loom.com/share/33d91cebd86a40b5a0671d7c9486e072)
 
 ## Screen Shots
 
