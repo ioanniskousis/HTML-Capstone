@@ -120,7 +120,7 @@ form button {
 }
 
 main {
-  background-color:rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 8px 20px 20px 20px;
   padding: 20px;
 }
@@ -172,10 +172,6 @@ main {
   overflow: hidden;
   display: flex;
   justify-content: center;
-}
-
-.top-picture img {
-  width: 100%;
 }
 
 .bottom-left-picture img,
@@ -272,14 +268,14 @@ main {
     padding: 4px 20px 5px 20px;
     height: 70px;
   }
-  
+
   .header-filters {
     position: relative;
     top: 0;
   }
 
   label {
-    font-size: 14px;;
+    font-size: 14px;
   }
 
   .filters-container select,
@@ -352,7 +348,7 @@ main {
   .bottom-center-picture img {
     height: 100%;
   }
-  
+
   .bottom-right-info {
     height: 100%;
     grid-area: bottom;
@@ -360,15 +356,15 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'location description' 'price facilities';
   }
-  
+
   .bottom-right-info-location {
     padding: 8px 4px;
   }
-  
+
   .bottom-right-info-description {
     padding: 8px;
   }
-  
+
   .bottom-right-info-price {
     padding: 8px;
   }
@@ -382,6 +378,5 @@ main {
   .main-grid {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }  
+  }
 }
-

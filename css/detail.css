@@ -33,12 +33,12 @@ main {
 }
 
 .real-estate {
-  border-radius: 10px 10px 0 0 ;
-  background-color:#fff;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
   display: flex;
   align-items: center;
   padding: 6px 15px;
-  border-bottom: 4px solid #00AEDF;
+  border-bottom: 4px solid #00aedf;
   margin-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@ main {
 }
 
 .real-estate img {
-  width: 48x;
+  width: 48px;
   height: 48px;
   margin-right: 30px;
   border-radius: 50%;
@@ -77,7 +77,7 @@ main {
 .details-item-label {
   color: white;
   width: 120px;
-  background-color: #00AEDF;
+  background-color: #00aedf;
   flex-shrink: 0;
 }
 
@@ -145,7 +145,7 @@ main {
 .gallery-item-description p {
   margin: 4px;
   padding-bottom: 4px;
-  border-bottom: 1px solid rgba(0, 174, 223, 0.3);;
+  border-bottom: 1px solid rgba(0, 174, 223, 0.3);
 }
 
 .gallery-item-description p:nth-child(1)::first-letter {
@@ -173,7 +173,7 @@ main {
   main {
     padding: 10px;
   }
-  
+
   .main-flex {
     flex-direction: column;
   }
@@ -199,7 +199,7 @@ main {
     margin-bottom: 10px;
     min-width: 280px;
   }
-  
+
   .gallery-item-image {
     flex: 1;
     text-align: center;
