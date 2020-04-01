@@ -1,7 +1,6 @@
 .search-outer {
   position: relative;
   margin-top: 300px;
-  padding: 0 20px;
   -webkit-animation: search-animation 2s ease-out;
   -moz-animation: search-animation 2s ease-out;
   animation: search-animation 2s ease-out;
@@ -15,7 +14,8 @@
 .search-container {
   box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
   background-color: rgba(151, 165, 167, 0.9);
-  max-width: 900px;
+  width: 90%;
+  max-width: 700px;
   margin: auto;
   height: 100%;
   border-radius: 10px;
@@ -72,8 +72,8 @@
 }
 
 details {
-  max-width: 900px;
-  margin: auto;
+  display: flex;
+  justify-items: center;
 }
 
 .how-works {
@@ -84,7 +84,7 @@ details {
   background-color: lightgray;
   box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
   border-radius: 4px;
-  margin-left: 30px;
+  margin: auto;
   -webkit-animation: how-works-animation 1s ease-in-out;
   -webkit-animation-iteration-count: 4;
   -webkit-animation-delay: 3s;
@@ -148,12 +148,9 @@ details summary::-webkit-details-marker {
 }
 
 .how-works-details {
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 900px;
-  margin: auto;
+  background-color: rgba(255, 255, 255, 1);
   margin-top: 10px;
-  padding: 20px 30px;
-  border-radius: 4px;
+  padding: 40px;
   margin-bottom: 30px;
 }
 
@@ -161,28 +158,28 @@ details summary::-webkit-details-marker {
   padding: 0;
   margin: 0;
   text-align: center;
-  color: rgb(227, 73, 58);
+  color: #d45749;
 }
 
 .how-works-steps {
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  overflow: hidden;
+  grid-gap: 20px;
 }
 
 .how-works-step {
   cursor: pointer;
   text-align: center;
-  padding: 10px 20px;
+  padding: 60px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.5);
   min-width: 150px;
+  min-height: 150px;
 }
 
 .how-works-step:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(245, 245, 245, 1);
 }
 
 .how-works-step img {
@@ -210,15 +207,11 @@ details summary::-webkit-details-marker {
     width: 100%;
   }
 
-  .how-works {
-    margin-left: 10px;
-  }
-
-  .how-works-details {
-    padding: 20px 10px;
-  }
-
   .how-works-steps {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .how-works-step {
+    padding: 30px;
   }
 }

@@ -1,16 +1,5 @@
-header {
-  top: 0;
-}
-
-.page-header-container {
-  background: rgb(10, 161, 50) url("../images/Thumb.jpg") no-repeat center 0;
-  background-size: cover;
-  padding: 9px 20px 5px 20px;
-  height: 74px;
-}
-
-.page-header {
-  max-width: 100%;
+body {
+  background: white;
 }
 
 main {
@@ -165,11 +154,6 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  .page-header-container {
-    padding: 4px 20px 5px 20px;
-    height: 70px;
-  }
-
   main {
     padding: 10px;
   }

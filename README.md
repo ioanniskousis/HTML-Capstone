@@ -16,13 +16,10 @@ The results page can be accessed by the first of the four right-side buttons on 
 
 - 4. Additionally I included an Under-Construction page that appears when one of the inactive menu buttons is clicked 
 
-The environment	is based on a selection of colours of light green and light blue variations since they are more appropriate for a house rental page, according to the point of view of colours’ psychology and how they affect users. Due to this I provide this link to a relevant article. 
-https://www.google.com/amp/s/www.intechnic.com/blog/color-psychology-101-how-color-affects-perception-of-your-website/%3fhs_amp=true 
-
 All pages are designed so they respond to three screen sizes 768 1024 and >1024 by using media queries 
 
 ## Video Presentation
-[Video](https://www.loom.com/share/33d91cebd86a40b5a0671d7c9486e072)
+[Video](https://www.loom.com/share/192b2a69ec2c4d72a6a752b247e655e3)
 
 ## Screen Shots
 

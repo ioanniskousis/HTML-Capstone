@@ -1,37 +1,29 @@
-header {
-  top: 0;
-}
-
-.page-header-container {
-  background: rgb(10, 161, 50) url("../images/Thumb.jpg") no-repeat center 0;
-  background-size: cover;
-  padding: 9px 20px 5px 20px;
-  height: 74px;
-}
-
-.page-header {
-  max-width: 100%;
+body {
+  background: white;
 }
 
 .header-filters {
-  background-color: rgb(10, 161, 50);
-  background-size: cover;
-  padding: 5px 20px;
-  position: sticky;
-  width: 100%;
-  top: 74px;
-  z-index: 1;
+  background-color: rgb(238, 238, 238);
+}
+
+.filters-caption {
+  padding: 10px;
 }
 
 .filters-container {
   width: 100%;
-  padding: 0;
+  padding: 20px;
 }
 
 .form-flex {
   width: 100%;
   flex-wrap: wrap;
   margin: 0;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .filters-container select {
@@ -59,12 +51,9 @@ header {
 
 .filters-container label {
   width: 100%;
-  display: none;
   height: 16px;
-  margin-top: 4px;
-  margin-bottom: 1px;
-  color: white;
-  padding-left: 10px;
+  color: #555;
+  padding: 4px;
   flex: 0.4;
 }
 
@@ -120,7 +109,6 @@ form button {
 }
 
 main {
-  background-color: rgba(255, 255, 255, 0.9);
   margin: 8px 20px 20px 20px;
   padding: 20px;
 }
@@ -129,8 +117,13 @@ main {
   padding-bottom: 30px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr));
+}
+
+.grid-item {
+  box-shadow: 0 0 2px 2px rgba(100, 100, 100, 0.2);
+  padding: 10px;
 }
 
 .grid-item a {
@@ -177,6 +170,7 @@ main {
 .bottom-left-picture img,
 .bottom-center-picture img {
   height: 100%;
+  width: 100%;
 }
 
 .bottom-right-info {
@@ -264,11 +258,6 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  .page-header-container {
-    padding: 4px 20px 5px 20px;
-    height: 70px;
-  }
-
   .header-filters {
     position: relative;
     top: 0;
@@ -276,6 +265,21 @@ main {
 
   label {
     font-size: 14px;
+  }
+
+  main {
+    margin: 8px 0 20px 0;
+    padding: 0;
+  }
+
+  .main-grid {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    box-shadow: none;
+    padding: 0;
   }
 
   .filters-container select,
@@ -290,12 +294,12 @@ main {
     padding-bottom: 10px;
   }
 
-  .form-buttons {
+  .buttons-container {
     order: -1;
   }
 
-  .filters-container label {
-    display: block;
+  .buttons-container label {
+    display: none;
   }
 
   .flex12,
@@ -311,16 +315,11 @@ main {
     flex: 1;
   }
 
-  main {
-    margin: 8px 10px 20px 10px;
-    padding: 0;
-  }
-
   .home-grid {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'top top' 'top top' 'top top' 'top top' 'mid-left mid-right'  'mid-left mid-right' 'bottom bottom' 'bottom bottom';
     border-bottom: 2px solid rgb(0, 174, 223);
@@ -370,13 +369,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   main {
     padding: 10px;
   }
 
   .main-grid {
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
