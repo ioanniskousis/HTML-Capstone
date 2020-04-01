@@ -74,8 +74,40 @@ div {
   color: #00aedf;
 }
 
+.a-gray {
+  color: #aaa;
+}
+
+.a-dgray {
+  color: #555;
+}
+
+.c-red {
+  color: rgb(226, 73, 51);
+}
+
+.bg-red {
+  background-color: rgb(226, 73, 51);;
+}
+
+.bg_dodgerblue {
+  background-color: #00aedf;
+}
+
+.bg_white {
+  background-color: white;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.marginh4 {
+  margin: 0 4px;
+}
+
+.br-50 {
+  border-radius: 50%;
 }
 
 .tooltip {

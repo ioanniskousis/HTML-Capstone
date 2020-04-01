@@ -10,11 +10,14 @@ The results page can be accessed from the menu button labeled Homes as well - th
 
 - 2. The results pages shows links in a grid layout. Three pictures and a panel with critical information represent a link to a house laid out in a smaller grid form. The user accesses the details page by clicking anywhere in each item. The navigator menu contains a Home button on the left side of the navigator and a Search button to move back to the search page. The page provides a number of filters to help the users applying detailed search.
 
-- 3. The details page shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
+- 3. The details page shows a table on the top with information about the location, the type and available facilities of the house. 
+Follows a link to More Details and a location map of the House
+
+- 4. Photo Gallery page shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
 On the right side stands a scrolling list of pictures with description in a few paragraphs.
 The results page can be accessed by the first of the four right-side buttons on the navigator
 
-- 4. Additionally I included an Under-Construction page that appears when one of the inactive menu buttons is clicked 
+- 5. Additionally I included an Under-Construction page that appears when one of the inactive menu buttons is clicked 
 
 All pages are designed so they respond to three screen sizes 768 1024 and >1024 by using media queries 
 
@@ -23,12 +26,17 @@ All pages are designed so they respond to three screen sizes 768 1024 and >1024 
 
 ## Screen Shots
 
+# Index Page
 ![screenshot](images/screen-shots/index_lg.png)
 ![screenshot](images/screen-shots/index_sm1.png) 
 ![screenshot](images/screen-shots/index_sm2.png)
+# Results Page
 ![screenshot](images/screen-shots/results_lg.png)
 ![screenshot](images/screen-shots/results_sm1.png) 
 ![screenshot](images/screen-shots/results_sm2.png)
+# Details Page
+![screenshot](images/screen-shots/details.png)
+# Photo Gallery
 ![screenshot](images/screen-shots/detail_lg.png)
 ![screenshot](images/screen-shots/detail_sm1.png) 
 ![screenshot](images/screen-shots/detail_sm2.png)
