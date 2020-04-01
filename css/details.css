@@ -90,7 +90,6 @@ section {
   align-items: flex-end;
   justify-content: flex-end;
   white-space: nowrap;
-  /* line-height: 20px; */
   padding: 4px;
 }
 
@@ -107,6 +106,7 @@ section {
 .apply-info img {
   margin: 0 4px;
 }
+
 .details-description {
   clear: both;
 }
@@ -175,7 +175,7 @@ section {
   .flex-item {
     min-width: 220px;
   }
-  
+
   .click-to-view {
     letter-spacing: 3px;
   }
