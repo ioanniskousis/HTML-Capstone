@@ -1,0 +1,217 @@
+.search-outer {
+  position: relative;
+  margin-top: 300px;
+  -webkit-animation: search-animation 2s ease-out;
+  -moz-animation: search-animation 2s ease-out;
+  animation: search-animation 2s ease-out;
+}
+
+@keyframes search-animation {
+  from { margin-top: 1000px; }
+  to { margin-top: 300px; }
+}
+
+.search-container {
+  box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
+  background-color: rgba(151, 165, 167, 0.9);
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  height: 100%;
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+
+.search-container p {
+  margin: 6px 4px;
+}
+
+.form-sm {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form-sm input[type="text"] {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  width: calc(100% - 130px);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-sm button {
+  margin: 0;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+  background-color: rgb(227, 73, 58);
+  color: white;
+  cursor: pointer;
+}
+
+.form-sm button:hover {
+  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.5);
+}
+
+.form-sm button:active {
+  box-shadow: 0 0 4px 3px rgba(30, 30, 30, 0.5);
+}
+
+.details-container {
+  margin: 10px 0;
+}
+
+details {
+  display: flex;
+  justify-items: center;
+}
+
+.how-works {
+  color: dodgerblue;
+  font-size: 16px;
+  width: 180px;
+  height: 40px;
+  background-color: lightgray;
+  box-shadow: 0 0 4px 1px rgba(80, 80, 80, 0.3) inset;
+  border-radius: 4px;
+  margin: auto;
+  -webkit-animation: how-works-animation 1s ease-in-out;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-direction: alternate-reverse;
+  -moz-animation: how-works-animation 1s ease-in-out;
+  -moz-animation-iteration-count: 4;
+  -moz-animation-delay: 3s;
+  -moz-animation-direction: alternate-reverse;
+  animation: how-works-animation 1s ease-in-out;
+  animation-iteration-count: 4;
+  animation-delay: 3s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes how-works-animation {
+  from { opacity: 0.8; }
+  to { opacity: 1; }
+  from { background-color: rgb(211, 211, 211); }
+  to { background-color: orange; }
+  from { color: white; }
+  to { color: dodgerblue; }
+}
+
+.how-works:hover {
+  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.5);
+}
+
+.how-works:active {
+  box-shadow: 0 0 4px 3px rgba(30, 30, 30, 0.5);
+}
+
+details summary {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+details summary span {
+  position: absolute;
+  -moz-margin-top: 12px;
+  margin-top: 12px;
+  margin-left: 30px;
+  line-height: 100%;
+}
+
+details summary span i {
+  margin-left: 10px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::-moz-list-bullet {
+  list-style-type: none;
+  display: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.how-works-details {
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.how-works-details p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #d45749;
+}
+
+.how-works-steps {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.how-works-step {
+  cursor: pointer;
+  text-align: center;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.how-works-step:hover {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.how-works-step img {
+  width: 20px;
+  height: 20px;
+}
+
+.how-works-step p {
+  color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-container {
+    background-color: rgba(151, 165, 167, 0.8);
+    padding: 20px 10px;
+    border-radius: 6px;
+  }
+
+  .form-sm input[type="text"] {
+    width: 100%;
+  }
+
+  .form-sm button {
+    margin-top: 6px;
+    width: 100%;
+  }
+
+  .how-works-steps {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .how-works-step {
+    padding: 30px;
+  }
+}

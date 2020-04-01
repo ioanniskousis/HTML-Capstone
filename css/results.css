@@ -1,0 +1,381 @@
+body {
+  background: white;
+}
+
+.header-filters {
+  background-color: rgb(238, 238, 238);
+}
+
+.filters-caption {
+  padding: 10px;
+}
+
+.filters-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.form-flex {
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-container select {
+  padding: 0 4px;
+  border: none;
+  outline: none;
+  margin: 4px 4px 0 0;
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  text-indent: 4px;
+  min-width: 160px;
+  cursor: pointer;
+  height: 36px;
+  background-image: url("../images/arrow-216-16.png");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+
+.filters-container label {
+  width: 100%;
+  height: 16px;
+  color: #555;
+  padding: 4px;
+  flex: 0.4;
+}
+
+.flex12 {
+  flex: 1.2;
+}
+
+.flex10 {
+  flex: 1;
+}
+
+form button {
+  height: 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: lightgray;
+  margin: 4px 4px 0 0;
+  padding: 0 4px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.responding:hover {
+  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.5);
+}
+
+.responding:active {
+  box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.9);
+}
+
+.form-buttons {
+  flex: 1.3;
+  display: flex;
+  min-width: 160px;
+}
+
+.sel-area span {
+  font-size: 8px;
+  color: dodgerblue;
+}
+
+.search-button {
+  flex: 1;
+  border: 1px solid rgb(41, 107, 171);
+  background-color: rgb(57, 123, 185);
+}
+
+.clear-button {
+  flex: 1.5;
+  border: 1px solid rgb(236, 161, 38);
+  background-color: rgb(237, 173, 70);
+}
+
+main {
+  margin: 8px 20px 20px 20px;
+  padding: 20px;
+}
+
+.main-grid {
+  padding-bottom: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr));
+}
+
+.grid-item {
+  box-shadow: 0 0 2px 2px rgba(100, 100, 100, 0.2);
+  padding: 10px;
+}
+
+.grid-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.home-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'top top top' 'top top top' 'top top top' 'bottom-left bottom-center bottom-right';
+}
+
+.top-picture {
+  grid-area: top;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.top-picture img {
+  width: 100%;
+}
+
+.bottom-left-picture {
+  grid-area: bottom-left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-center-picture {
+  grid-area: bottom-center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-left-picture img,
+.bottom-center-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-right-info {
+  height: 100%;
+  grid-area: bottom-right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'location' 'location' 'description' 'description' 'price' 'price' 'facilities';
+}
+
+.bottom-right-info-location {
+  text-align: left;
+  padding: 2px 4px;
+  line-height: 1.1;
+  color: white;
+  grid-area: location;
+  background-color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom-right-info-description {
+  text-align: left;
+  padding: 2px 4px;
+  grid-area: description;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom-right-info-price {
+  padding: 2px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  grid-area: price;
+  background-color: rgb(0, 174, 223);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom-right-info-facilities {
+  grid-area: facilities;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-facility {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.park-yes {
+  background-image: url("../images/car-4-24-b.png");
+}
+
+.tv-yes {
+  background-image: url("../images/tv-24-b.png");
+}
+
+.wifi-yes {
+  background-image: url("../images/wireless-24-b.png");
+}
+
+.park-no {
+  background-image: url("../images/car-4-24.png");
+}
+
+.tv-no {
+  background-image: url("../images/tv-24.png");
+}
+
+.wifi-no {
+  background-image: url("../images/wireless-24.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .header-filters {
+    position: relative;
+    top: 0;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  main {
+    margin: 8px 0 20px 0;
+    padding: 0;
+  }
+
+  .main-grid {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .filters-container select,
+  .form-flex div {
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+
+  .form-flex {
+    flex-direction: column;
+    height: 520px;
+    padding-bottom: 10px;
+  }
+
+  .buttons-container {
+    order: -1;
+  }
+
+  .buttons-container label {
+    display: none;
+  }
+
+  .flex12,
+  .flex10 {
+    flex: 1;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 6px;
+  }
+
+  .search-button,
+  .clear-button {
+    flex: 1;
+  }
+
+  .home-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'top top' 'top top' 'top top' 'top top' 'mid-left mid-right'  'mid-left mid-right' 'bottom bottom' 'bottom bottom';
+    border-bottom: 2px solid rgb(0, 174, 223);
+    margin-bottom: 20px;
+  }
+
+  .top-picture {
+    grid-area: top;
+  }
+
+  .bottom-left-picture {
+    grid-area: mid-left;
+  }
+
+  .bottom-center-picture {
+    grid-area: mid-right;
+  }
+
+  .top-picture img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bottom-left-picture img,
+  .bottom-center-picture img {
+    height: 100%;
+  }
+
+  .bottom-right-info {
+    height: 100%;
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'location description' 'price facilities';
+  }
+
+  .bottom-right-info-location {
+    padding: 8px 4px;
+  }
+
+  .bottom-right-info-description {
+    padding: 8px;
+  }
+
+  .bottom-right-info-price {
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    padding: 10px;
+  }
+
+  .main-grid {
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
