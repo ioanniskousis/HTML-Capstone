@@ -22,7 +22,7 @@ The results page can be accessed by the first of the four right-side buttons on 
 All pages are designed so they respond to three screen sizes 768 1024 and >1024 by using media queries 
 
 ## Video Presentation
-[Video](https://www.loom.com/share/192b2a69ec2c4d72a6a752b247e655e3)
+[Video](https://www.loom.com/share/b55f0d434e2f4ebb9ebd53b124ac813c)
 
 ## Screen Shots
 
