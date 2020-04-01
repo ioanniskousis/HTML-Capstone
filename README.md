@@ -51,7 +51,7 @@ All pages are designed so they respond to three screen sizes 768 1024 and >1024 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ioanniskousis/Capstone/56c209eeb47ea532486c0fb5be661a478dcc781c/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ioanniskousis/Capstone/53e13efb86e183edfe8641bf820aee05a064d598/index.html)
 
 ## Getting Started
 
