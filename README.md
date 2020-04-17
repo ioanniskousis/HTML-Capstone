@@ -13,7 +13,7 @@ The results page can be accessed from the menu button labeled Homes as well - th
 - 3. The details page shows a table on the top with information about the location, the type and available facilities of the house. 
 Follows a link to More Details and a location map of the House
 
-- 4. Photo Gallery page shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
+- 4. Photo Gallery page is accessed from the button View More Details in the details page and shows a table on the left with the real-estate firm and information about the location, the type and available facilities of the house. 
 On the right side stands a scrolling list of pictures with description in a few paragraphs.
 The results page can be accessed by the first of the four right-side buttons on the navigator
 
