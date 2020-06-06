@@ -1,6 +1,5 @@
 # House Rental - Capstone project
-HTML & CSS capstone project is based on an online Directory of Schools, but the specifications suggests to personalize the content and choose between a variety of content types, one of which was “house rental” and this is my choice.
-Therefor, I developed this project that demonstrate the management of content of a real-estate agency database using three pages. 
+HTML & CSS capstone project demonstrates the management of content for a real-estate agency database using three pages. 
 
 - 1. The main page which represents a search mechanism that links to the 2nd page showing the results of the search.
 The page appears showing some animations. One prompts the user to learn about the use of the application.
